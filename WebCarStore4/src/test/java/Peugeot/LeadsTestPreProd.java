@@ -30,7 +30,7 @@ public class LeadsTestPreProd {
     @Test(priority = 1)
     public void Litetest() {
 
-        driver.get("http://fr.store.peugeot.preprod.inetpsa.com");
+        driver.get("http://es.store.peugeot.preprod.inetpsa.com/Inicio");
 
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
@@ -40,7 +40,7 @@ public class LeadsTestPreProd {
         WaitS.Wait(2000);
         new Select(driver.findElement(By.name("model"))).selectByIndex(4);
         WaitS.Wait(2000);
-        driver.findElement(By.id("region")).sendKeys("Paris");
+        driver.findElement(By.id("region")).sendKeys("Madrid");
         WaitS.Wait(2000);
         driver.findElement(By.id("region")).sendKeys(Keys.ENTER);
         WaitS.Wait(2000);
