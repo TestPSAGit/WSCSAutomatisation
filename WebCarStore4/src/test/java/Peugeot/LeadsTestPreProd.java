@@ -48,6 +48,10 @@ public class LeadsTestPreProd {
         System.err.println(driver.getCurrentUrl());
         WaitS.waitForLoad(driver);
         driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Voir nos offres'])[1]/following::i[1]")).click();
+        System.err.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx");
+        System.err.println(driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Voir nos offres'])[1]/following::i[1]"))
+                .getText());
+        System.err.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx");
 
         WaitS.waitForLoad(driver);
 
