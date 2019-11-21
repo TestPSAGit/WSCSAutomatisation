@@ -58,8 +58,10 @@ public class LeadsJenkinsTest {
                 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[2]/p[1]/a[1]/span[1]/strong[1]")));
         driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[2]/p[1]/a[1]/span[1]/strong[1]")).click();
         WaitS.Wait(3000);
+        System.out.println("this is the Product page<<<>>>>>>>    " + driver.getCurrentUrl());
         WaitS.WaitForElementToBeVisible(driver, driver.findElement(By.id("BtContacterPDV2")));
         driver.findElement(By.id("BtContacterPDV2")).click();
+        System.out.println("this is the contact page<<<>>>>>>>    " + driver.getCurrentUrl());
         WaitS.waitForLoad(driver);
         LeadsAP.FillContactFormFrance(driver, TestData, 2);
         LeadsAP.ClickSubmitButton(driver);

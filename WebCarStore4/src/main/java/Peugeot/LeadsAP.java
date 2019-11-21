@@ -103,6 +103,7 @@ public class LeadsAP {
     }
 
     static boolean GetTheConfirmationMessage(WebDriver driver) {
+        System.out.println("this is the confirmation page<<<>>>>>>>    " + driver.getCurrentUrl());
         WebDriverWait wait = new WebDriverWait(driver, 40);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@class='title']")));
         boolean message = driver.findElement(By.xpath("//p[@class='title']")).isDisplayed();
