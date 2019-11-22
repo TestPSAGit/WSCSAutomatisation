@@ -101,6 +101,8 @@ public class LeadsAP {
     }
 
     public static void ClickSubmitButton(WebDriver driver) {
+        WaitS.Wait(2000);
+        System.err.println(driver.findElement(By.id("lnkBtnValidate")).getText());
         driver.findElement(By.id("lnkBtnValidate")).click();
         WaitS.Wait(2000);
         System.err.println(driver.findElement(By.id("lnkBtnValidate")).getText());
