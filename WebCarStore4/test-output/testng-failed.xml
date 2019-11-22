@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Peugeot.LeadsTestPreProd">
+      <class name="Peugeot.LeadsJenkinsTest">
         <methods>
-          <include name="Litetest"/>
           <include name="BeforeTest"/>
+          <include name="Litetest"/>
         </methods>
-      </class> <!-- Peugeot.LeadsTestPreProd -->
+      </class> <!-- Peugeot.LeadsJenkinsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

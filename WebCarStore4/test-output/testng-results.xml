@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52145" started-at="2019-11-21T10:29:55 CET" finished-at="2019-11-21T10:30:47 CET">
+  <suite name="Default suite" duration-ms="58128" started-at="2019-11-22T16:48:51 CET" finished-at="2019-11-22T16:49:50 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52145" started-at="2019-11-21T10:29:55 CET" finished-at="2019-11-21T10:30:47 CET">
-      <class name="Peugeot.LeadsTestPreProd">
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:Peugeot.LeadsTestPreProd@4973813a]" name="BeforeTest" is-config="true" duration-ms="3211" started-at="2019-11-21T10:29:55 CET" finished-at="2019-11-21T10:29:58 CET">
+    <test name="Default test" duration-ms="58128" started-at="2019-11-22T16:48:51 CET" finished-at="2019-11-22T16:49:50 CET">
+      <class name="Peugeot.LeadsJenkinsTest">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:Peugeot.LeadsJenkinsTest@7d0587f1]" name="BeforeTest" is-config="true" duration-ms="3678" started-at="2019-11-22T16:48:52 CET" finished-at="2019-11-22T16:48:55 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="Litetest()[pri:1, instance:Peugeot.LeadsTestPreProd@4973813a]" name="Litetest" duration-ms="48869" started-at="2019-11-21T10:29:58 CET" finished-at="2019-11-21T10:30:47 CET">
+        <test-method status="PASS" signature="Litetest()[pri:1, instance:Peugeot.LeadsJenkinsTest@7d0587f1]" name="Litetest" duration-ms="54383" started-at="2019-11-22T16:48:55 CET" finished-at="2019-11-22T16:49:50 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Litetest -->
-      </class> <!-- Peugeot.LeadsTestPreProd -->
+      </class> <!-- Peugeot.LeadsJenkinsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

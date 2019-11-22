@@ -36,6 +36,7 @@ public class LeadsJenkinsTest {
         driver.manage().window().maximize(); // driver.findElement(By.className("psac_noselect")).click();
         ElementMethodes.CloseCokies(driver);
         driver.findElement(By.name("model")).click();
+        ElementMethodes.CloseCokies(driver);
         WaitS.Wait(2000);
         new Select(driver.findElement(By.name("model"))).selectByIndex(4);
         WaitS.Wait(2000);
@@ -47,6 +48,7 @@ public class LeadsJenkinsTest {
         System.err.println(driver.getCurrentUrl());
         WaitS.waitForLoad(driver);
         driver.findElement(By.id("model-choice-counter")).click();
+        ElementMethodes.CloseCokies(driver);
         System.err.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx");
         System.err.println(driver.findElement(By.xpath("//strong[contains(text(),'Voir cette voiture')]")).getText());
         System.err.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx");
@@ -68,10 +70,12 @@ public class LeadsJenkinsTest {
         WaitS.WaitForElementToBeClickable(driver,
                 driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[2]/p[1]/a[1]/span[1]/strong[1]")));
         driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[2]/p[1]/a[1]/span[1]/strong[1]")).click();
+        ElementMethodes.CloseCokies(driver);
         WaitS.Wait(3000);
         System.out.println("this is the Product page<<<>>>>>>>    " + driver.getCurrentUrl());
         WaitS.WaitForElementToBeVisible(driver, driver.findElement(By.id("BtContacterPDV2")));
         driver.findElement(By.id("BtContacterPDV2")).click();
+        ElementMethodes.CloseCokies(driver);
         System.out.println("this is the contact page<<<>>>>>>>    " + driver.getCurrentUrl());
         WaitS.waitForLoad(driver);
         LeadsAP.FillContactFormFrance(driver, TestData, 2);
