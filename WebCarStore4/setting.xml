@@ -5,7 +5,7 @@
 
     <proxies>
         <proxy>
-            <active>true</active>
+            <active>false</active>
             <username>E562418</username>
             <password>Fh133499</password>
             <host>http.ntlm.internetpsa.inetpsa.com</host>
