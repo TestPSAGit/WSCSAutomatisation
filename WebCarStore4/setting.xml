@@ -7,7 +7,7 @@
         <proxy>
             <active>true</active>
             <username>E562418</username>
-            <password>Id133499</password>
+            <password>Fh133499</password>
             <host>http.ntlm.internetpsa.inetpsa.com</host>
             <port>8080</port>
         </proxy>
