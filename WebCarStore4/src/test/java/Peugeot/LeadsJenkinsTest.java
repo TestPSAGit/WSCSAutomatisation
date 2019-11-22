@@ -6,7 +6,9 @@ package Peugeot;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -28,24 +30,33 @@ public class LeadsJenkinsTest {
     @Test(priority = 1)
     public void Litetest() {
 
-        /*
-         * driver.get("http://fr.store.peugeot.preprod.inetpsa.com");
-         * 
-         * driver.manage().deleteAllCookies(); driver.manage().window().maximize(); // driver.findElement(By.className("psac_noselect")).click();
-         * ElementMethodes.CloseCokies(driver); driver.findElement(By.name("model")).click(); WaitS.Wait(2000); new
-         * Select(driver.findElement(By.name("model"))).selectByIndex(4); WaitS.Wait(2000); driver.findElement(By.id("region")).sendKeys("Paris");
-         * WaitS.Wait(2000); driver.findElement(By.id("region")).sendKeys(Keys.ENTER); WaitS.Wait(2000);
-         * System.err.println("curent url >>>>>>>>>>>>>"); System.err.println(driver.getCurrentUrl()); WaitS.waitForLoad(driver);
-         * driver.findElement(By.xpath("//button[@class='btn btn-large btn-full btn-primary btn-double submit bound']")).click();
-         * System.err.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx");
-         * System.err.println(driver.findElement(By.xpath("//button[@class='btn btn-large btn-full btn-primary btn-double submit bound']")).getText())
-         * ; System.err.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx");
-         * 
-         * WaitS.waitForLoad(driver);
-         * 
-         * System.err.println(driver.getCurrentUrl()); ElementMethodes.SwitchToCurrentUrl(driver); System.err.println("curent url >>>>>>>>>>>>>");
-         * System.err.println(driver.getWindowHandle());
-         */
+        driver.get("http://fr.store.peugeot.preprod.inetpsa.com");
+
+        driver.manage().deleteAllCookies();
+        driver.manage().window().maximize(); // driver.findElement(By.className("psac_noselect")).click();
+        ElementMethodes.CloseCokies(driver);
+        driver.findElement(By.name("model")).click();
+        WaitS.Wait(2000);
+        new Select(driver.findElement(By.name("model"))).selectByIndex(4);
+        WaitS.Wait(2000);
+        driver.findElement(By.id("region")).sendKeys("Paris");
+        WaitS.Wait(2000);
+        driver.findElement(By.id("region")).sendKeys(Keys.ENTER);
+        WaitS.Wait(2000);
+        System.err.println("curent url >>>>>>>>>>>>>");
+        System.err.println(driver.getCurrentUrl());
+        WaitS.waitForLoad(driver);
+        driver.findElement(By.xpath("//span[@id='complet']")).click();
+        System.err.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx");
+        System.err.println(driver.findElement(By.xpath("//span[@id='complet']")).getText());
+        System.err.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx");
+
+        WaitS.waitForLoad(driver);
+
+        System.err.println(driver.getCurrentUrl());
+        ElementMethodes.SwitchToCurrentUrl(driver);
+        System.err.println("curent url >>>>>>>>>>>>>");
+        System.err.println(driver.getWindowHandle());
 
         driver.get(
                 "http://fr.store.peugeot.preprod.inetpsa.com/Recherche-par-critere?lat=48.856614&lng=2.3522219000000177&LocationL=Paris%2C%20France&etd=0&mbd=1PT9zzzzzzzz;1PT9S0000032;1PT9S0000030;");
