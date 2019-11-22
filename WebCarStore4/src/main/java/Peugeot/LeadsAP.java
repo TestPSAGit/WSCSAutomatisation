@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Utilities.WaitS;
+
 public class LeadsAP {
 
     static void FillContactFormFrance(WebDriver driver, String[][] Data, int i) {
@@ -100,6 +102,8 @@ public class LeadsAP {
 
     public static void ClickSubmitButton(WebDriver driver) {
         driver.findElement(By.id("lnkBtnValidate")).click();
+        WaitS.Wait(2000);
+        System.err.println(driver.findElement(By.id("lnkBtnValidate")).getText());
     }
 
     static boolean GetTheConfirmationMessage(WebDriver driver) {
