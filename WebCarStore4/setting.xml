@@ -8,7 +8,7 @@
             <active>true</active>
             <username>E562418</username>
             <password>Lh133499</password>
-            <host>http://E562418:Lh133499@http.internetpsa.inetpsa.com</host>
+            <host>http.ntlm.internetpsa.inetpsa.com</host>
             <port>8080</port>
         </proxy>
     </proxies>
