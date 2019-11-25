@@ -36,14 +36,6 @@
             <version>3.0.0</version>
         </dependency>
 
-
-        <dependency>
-            <groupId>org.apache.maven.archetypes</groupId>
-            <artifactId>maven-archetype-quickstart</artifactId>
-            <version>1.0</version>
-        </dependency>
-
-       
         <!-- https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/tesseract -->
         <dependency>
             <groupId>org.bytedeco.javacpp-presets</groupId>
