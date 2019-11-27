@@ -19,9 +19,15 @@ public class InitialiseDrivers {
 
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         ChromeOptions options = new ChromeOptions();
-        // options.addArguments("--incognito");
-        // options.addArguments("--headless");
+        options.addArguments("--incognito");
+        options.addArguments("--headless");
+        options.addArguments("--ignore-certificate-errors");
+        // options.addArguments("headless");
+        // Proxy proxy = new Proxy();
+        // proxy.setHttpProxy("http.ntlm.internetpsa.inetpsa.com:8080");
+        // options.setCapability("proxy", proxy);
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\E562418\\Desktop\\WSCS Selenium\\WebCarStore4\\Drivers\\chromedriver.exe");
         driver = new ChromeDriver(capabilities);
 
@@ -37,7 +43,7 @@ public class InitialiseDrivers {
     }
 
     public static WebDriver InitialiseIEDriver() {
-        System.setProperty("webdriver.ie.driver", "Drivers\\IEDriverServer.exe");
+        System.setProperty("webdriver.ie.driver", "C:\\Users\\E562418\\git\\WSCSAutomatisation\\WebCarStore4\\Drivers\\IEDriverServer.exe");
 
         driver = new InternetExplorerDriver();
         return driver;
